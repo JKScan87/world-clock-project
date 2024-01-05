@@ -34,17 +34,7 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
-  let budapestElement = document.querySelector("#budapest");
-  if (budapestElement) {
-    budapestDateElement = budapestElement.querySelector(".date");
-    let budapestTimeElement = budapestElement.querySelector(".time");
-    budapestTime = moment().tz("Europe/Budapest");
 
-    budapestDateElement.innerHTML = budapestTime.format("MMMM Do, YYYY");
-    budapestTimeElement.innerHTML = budapestTime.format(
-      "h:mm:ss [<small>]A[</small>]"
-    );
-  }
   let cairoElement = document.querySelector("#cairo");
   if (cairoElement) {
     cairoDateElement = cairoElement.querySelector(".date");
